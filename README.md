@@ -1,16 +1,7 @@
 # MobaXterm-GenKey
 你懂的！！
 
-
-## 本地启动
-需要安装Python3!!!
-
-## Docker
-```
-docker pull malaohu/mobaxterm-genkey
-docker run -d -p 5000:5000 malaohu/mobaxterm-genkey
-```
-## SSH 命令生成镜像
+## Docker SSH 命令生成镜像
 ```
 sudo git clone https://github.com/malaohu/MobaXterm-GenKey.git
 
