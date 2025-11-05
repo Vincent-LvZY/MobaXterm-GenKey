@@ -17,20 +17,23 @@ python app.py
 docker pull malaohu/mobaxterm-genkey
 docker run -d -p 5000:5000 malaohu/mobaxterm-genkey
 ```
-## SSH 命令
+## SSH 命令生成镜像
 ```
 sudo git clone https://github.com/malaohu/MobaXterm-GenKey.git
 
 cd MobaXterm-GenKey
 
-sudo sed -i '1s/.*/FROM python:3.9-slim/; 2s/.*/LABEL maintainer="Vincent <jacklvlv@163.com>"/' Dockerfile
+sudo sed -i '1s/.*/FROM python:3.9-slim/; 2s/.*/LABEL maintainer="Vincent <123@163.com>"/' Dockerfile  ##邮箱地址自行修改
 
 sudo docker build -t mobaxterm-keygen .
-
+```
+## 打包镜像
+```
 sudo docker save -o mobaxterm-keygen.tar mobaxterm-keygen:latest
 sudo docker load -i mobaxterm-keygen.tar
-
-
+```
+## 启动命令
+```
 services:
   mobaxterm-keygen:
     image: mobaxterm-keygen:latest
