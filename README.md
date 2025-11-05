@@ -1,9 +1,6 @@
 # MobaXterm-GenKey
 你懂的！！
 
-## 演示地址
-http://149.129.94.166:5000/
-
 
 ## 本地启动
 需要安装Python3!!!
@@ -43,7 +40,7 @@ services:
 ```
 
 ## 使用方法
-访问：IP:5000
+访问：IP:5300
 
 ![image](https://img14.360buyimg.com/ddimg/jfs/t1/327451/37/1655/17390/68940230F93909c3f/80f2e5a285489ac1.jpg)
 
