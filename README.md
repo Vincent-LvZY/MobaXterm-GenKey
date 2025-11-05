@@ -3,7 +3,7 @@
 
 ## Docker SSH 命令生成镜像
 ```
-sudo git clone https://github.com/malaohu/MobaXterm-GenKey.git
+sudo git clone https://github.com/Vincent-LvZY/MobaXterm-GenKey.git
 
 cd MobaXterm-GenKey
 
