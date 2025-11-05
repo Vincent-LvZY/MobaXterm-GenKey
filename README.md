@@ -17,7 +17,27 @@ python app.py
 docker pull malaohu/mobaxterm-genkey
 docker run -d -p 5000:5000 malaohu/mobaxterm-genkey
 ```
+## SSH 命令
+```
+sudo git clone https://github.com/malaohu/MobaXterm-GenKey.git
 
+cd MobaXterm-GenKey
+
+sudo sed -i '1s/.*/FROM python:3.9-slim/; 2s/.*/LABEL maintainer="Vincent <jacklvlv@163.com>"/' Dockerfile
+
+sudo docker build -t mobaxterm-keygen .
+
+sudo docker save -o mobaxterm-keygen.tar mobaxterm-keygen:latest
+sudo docker load -i mobaxterm-keygen.tar
+
+
+services:
+  mobaxterm-keygen:
+    image: mobaxterm-keygen:latest
+    restart: always
+    ports:
+      - 5300:5000
+```
 
 ## 使用方法
 访问：IP:5000
