@@ -7,7 +7,7 @@ sudo git clone https://github.com/Vincent-LvZY/MobaXterm-GenKey.git
 
 cd MobaXterm-GenKey
 
-sudo sed -i '1s/.*/FROM python:3.9-slim/; 2s/.*/LABEL maintainer="Vincent <123@163.com>"/' Dockerfile  ##邮箱地址自行修改
+sudo sed -i '1s/.*/FROM python:3.9-slim/; 2s/.*/LABEL maintainer="Vincent <123@163.com>"/; 3d' Dockerfile  ##邮箱地址自行修改
 
 sudo docker build -t mobaxterm-keygen .
 ```
