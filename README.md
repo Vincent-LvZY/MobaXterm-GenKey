@@ -42,7 +42,7 @@ services:
 ## 使用方法
 访问：IP:5300
 
-![image](https://img14.360buyimg.com/ddimg/jfs/t1/327451/37/1655/17390/68940230F93909c3f/80f2e5a285489ac1.jpg)
+![image]([https://img14.360buyimg.com/ddimg/jfs/t1/327451/37/1655/17390/68940230F93909c3f/80f2e5a285489ac1.jpg](https://github.com/Vincent-LvZY/MobaXterm-GenKey/blob/main/Screen.png))
 
 ### 激活方式
 直接放到软件目录即可！
